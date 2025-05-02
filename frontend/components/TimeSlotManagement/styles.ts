@@ -1,0 +1,295 @@
+import { StyleSheet } from 'react-native';
+
+export const styles = StyleSheet.create({
+  // Styles for List and Item
+  emptyContainer: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    paddingVertical: 40,
+  },
+  emptyText: {
+    fontSize: 18,
+    fontWeight: 'bold',
+    color: '#666',
+    marginTop: 16,
+    marginBottom: 8,
+  },
+  emptySubText: {
+    fontSize: 14,
+    color: '#999',
+  },
+  slotsContainer: {
+    flex: 1,
+  },
+  slotItem: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    paddingVertical: 12,
+    paddingHorizontal: 16,
+    backgroundColor: '#f8f9fa',
+    borderRadius: 8,
+    marginBottom: 10,
+    borderLeftWidth: 4,
+    borderLeftColor: '#4caf50',
+  },
+  bookedSlot: {
+    borderLeftColor: '#e57373',
+    backgroundColor: '#ffebee',
+  },
+  slotInfo: {
+    flex: 1,
+  },
+  dayText: {
+    fontSize: 14,
+    color: '#666',
+    marginBottom: 4,
+  },
+  timeText: {
+    fontSize: 16,
+    fontWeight: 'bold',
+    color: '#333',
+    marginBottom: 4,
+  },
+  statusContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  statusDot: {
+    width: 8,
+    height: 8,
+    borderRadius: 4,
+    marginRight: 6,
+  },
+  statusText: {
+    fontSize: 14,
+  },
+  slotActions: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  actionButton: {
+    padding: 8,
+    marginLeft: 8,
+  },
+
+  // Styles for Modal
+  centeredView: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: 'rgba(0,0,0,0.5)',
+  },
+  modalView: {
+    backgroundColor: 'white',
+    borderRadius: 20,
+    width: '90%',
+    padding: 24,
+    alignItems: 'center',
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 4,
+    elevation: 5,
+  },
+  modalTitle: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    marginBottom: 20,
+    color: '#333',
+    alignSelf: 'flex-start',
+  },
+  inputGroup: {
+    width: '100%',
+    marginBottom: 16,
+    position: 'relative',
+  },
+  inputLabel: {
+    fontSize: 14,
+    color: '#666',
+    marginBottom: 8,
+  },
+  daySelector: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    borderWidth: 1,
+    borderColor: '#ddd',
+    borderRadius: 8,
+    padding: 12,
+    backgroundColor: '#f8f9fa',
+  },
+  dayTextModal: {
+    fontSize: 16,
+    color: '#333',
+  },
+  dayPickerContainer: {
+    position: 'absolute',
+    top: 76,
+    left: 0,
+    right: 0,
+    backgroundColor: 'white',
+    borderWidth: 1,
+    borderColor: '#ddd',
+    borderRadius: 8,
+    zIndex: 1000,
+    maxHeight: 180,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.1,
+    shadowRadius: 2,
+    elevation: 3,
+  },
+  dayOption: {
+    padding: 12,
+    borderBottomWidth: 1,
+    borderBottomColor: '#f0f0f0',
+  },
+  selectedDayOption: {
+    backgroundColor: '#e3f2fd',
+  },
+  dayOptionText: {
+    fontSize: 16,
+    color: '#333',
+  },
+  selectedDayOptionText: {
+    fontWeight: 'bold',
+    color: '#007bff',
+  },
+  timeSelector: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    borderWidth: 1,
+    borderColor: '#ddd',
+    borderRadius: 8,
+    padding: 12,
+    backgroundColor: '#f8f9fa',
+  },
+  timeTextModal: {
+    fontSize: 16,
+    color: '#333',
+  },
+  modalActions: {
+    flexDirection: 'row',
+    justifyContent: 'flex-end',
+    width: '100%',
+    marginTop: 24,
+  },
+  button: {
+    paddingVertical: 12,
+    paddingHorizontal: 24,
+    borderRadius: 8,
+    minWidth: 100,
+    alignItems: 'center',
+  },
+  buttonCancel: {
+    backgroundColor: '#f5f5f5',
+    marginRight: 12,
+  },
+  buttonCancelText: {
+    color: '#666',
+    fontWeight: 'bold',
+  },
+  buttonSave: {
+    backgroundColor: '#007bff',
+  },
+  buttonSaveText: {
+    color: 'white',
+    fontWeight: 'bold',
+  },
+
+  // Styles for the main container component (index.tsx)
+  container: {
+    flex: 1,
+    backgroundColor: '#ffffff',
+    borderRadius: 10,
+    padding: 16,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.1,
+    shadowRadius: 4,
+    elevation: 3,
+    paddingBottom: 16,
+    marginBottom: 16,
+  },
+  header: {
+    position: 'relative',
+    paddingRight: 52,
+    marginBottom: 16,
+  },
+  headerTitleMain: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    color: '#333',
+    marginBottom: 8,
+  },
+  dateContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 4,
+  },
+  headerDate: {
+    fontSize: 14,
+    color: '#666',
+    marginLeft: 6,
+  },
+  addButton: {
+    position: 'absolute',
+    right: 0,
+    top: 0,
+    padding: 8,
+    backgroundColor: '#e3f2fd',
+    borderRadius: 24,
+    width: 44,
+    height: 44,
+    alignItems: 'center',
+    justifyContent: 'center',
+    elevation: 2,
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.1,
+    shadowRadius: 2,
+  },
+  // Summary section styles
+  summaryContainer: {
+    padding: 16,
+    borderTopWidth: 1,
+    borderTopColor: '#f0f0f0',
+    marginTop: 8,
+    marginBottom: 16,
+    backgroundColor: '#f8f9fa',
+    borderRadius: 8,
+  },
+  summaryTitle: {
+    fontSize: 16,
+    fontWeight: 'bold',
+    marginBottom: 10,
+    color: '#333',
+  },
+  summaryContent: {
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+  },
+  summaryItem: {
+    alignItems: 'center',
+    padding: 8,
+  },
+  summaryLabel: {
+    fontSize: 14,
+    color: '#666',
+    marginBottom: 4,
+  },
+  summaryValue: {
+    fontSize: 18,
+    fontWeight: 'bold',
+    color: '#333',
+  },
+});
