@@ -1,80 +1,88 @@
-# MEDIAPP
+ MEDIAPP
+Cross-platform Mobile Health Application for University Environments
 
-**Cross-platform Mobile Health Application for University Environments**
+MEDIAPP is a modern and intuitive mobile application designed to streamline healthcare access for students, faculty, and staff in university settings. It offers seamless appointment scheduling, AI-powered symptom checking, real-time provider availability, and secure mental health support—all in one place.
 
-MEDIAPP is a modern mobile application designed to revolutionize healthcare access for students, faculty, and staff in university settings. 
-It provides seamless appointment scheduling, AI-driven symptom checking, real-time provider availability, and secure access to mental health support.
+✨ Features
+📅 Easy appointment booking & management
 
----
+🤖 AI-powered symptom checker (via Google Gemini API)
 
-## 🚀 Features
- 
-- ReaAppointment booking and management  
-- AI-powered symptom checker using Google Gemini API  
-- Role-based secure login system  
-- Notifications and reminders  
-- Support for mental health counseling
+🔐 Secure, role-based login system
 
----
+🔔 Smart notifications and reminders
 
-## 🧱 Tech Stack
+🧠 Mental health counseling support
 
-### 📱 Frontend (React Native + TypeScript)
+🧱 Tech Stack
+📱 Frontend (React Native + TypeScript)
+Navigation: React Navigation
 
-- React Navigation for screen transitions
-- Axios for API requests
-- Redux/Context API for state management
-- Push notifications: `@react-native-community/push-notification-ios`, `react-native-push-notification`
-- UI Libraries: NativeBase / React Native Elements
-- Animations: `react-native-reanimated`, `react-native-animatable`
+API Communication: Axios
 
-### 🔧 Backend (Node.js + Express.js + JavaScript)
+State Management: Redux / Context API
 
-- MongoDB (NoSQL) with Mongoose ODM
-- Authentication: `bcrypt`, `jsonwebtoken` (JWT)
-- Environment Config: `dotenv`
-- Validation: `joi` / `express-validator`
-- Middleware: rate limiting, error handling, file uploads
-- Email Notifications: `nodemailer`
+Push Notifications:
 
-### 🧠 AI Integration
+@react-native-community/push-notification-ios
 
-- **Google Gemini API** for NLP-driven symptom checking and chatbot suggestions
-- Full integration with backend for secure, contextual symptom analysis
+react-native-push-notification
 
----
+UI Components: NativeBase / React Native Elements
 
-## 🛡️ Security
+Animations: react-native-reanimated, react-native-animatable
 
-- Passwords hashed with `bcrypt` and salting
-- Stateless JWT authentication
-- Role-based access control
-- CORS and Rate Limiting middleware
+🛠 Backend (Node.js + Express.js)
+Database: MongoDB (with Mongoose ODM)
 
----
+Authentication: bcrypt, jsonwebtoken (JWT)
 
-## Setup Backend
-```bash
+Configuration: dotenv
+
+Validation: joi, express-validator
+
+Middleware: Rate limiting, error handling, file uploads
+
+Email: nodemailer for notifications
+
+🧠 AI Integration
+Google Gemini API for NLP-driven symptom analysis and chatbot interaction
+
+Fully integrated with backend for secure and contextual health insights
+
+🔐 Security Features
+🔑 Passwords hashed with bcrypt + salting
+
+🪪 JWT-based stateless authentication
+
+🧍 Role-based access control
+
+🌐 CORS and rate-limiting middleware for API security
+
+🚀 Getting Started
+Backend Setup
+bash
+Copy
+Edit
 cd backend
 npm install
 npm run dev
-
-## Setup Frontend
-```bash
-cd ../frontend
+Frontend Setup
+bash
+Copy
+Edit
+cd frontend
 npm install
 npx expo start
+🧪 Testing
+Unit & Integration Tests: Jest
 
+UI Testing: React Native Testing Library
 
-## 🧪 Testing
+To run backend tests:
 
-- **Jest** for unit and integration testing
-- **React Native Testing Library** for UI interaction testing
-
-Run backend tests:
-```bash
+bash
+Copy
+Edit
 cd backend
-npm install
 npm test
-
-
