@@ -54,11 +54,13 @@ It provides seamless appointment scheduling, AI-driven symptom checking, real-ti
 ---
 
 ## Setup Backend
+```bash
 cd backend
 npm install
 npm run dev
 
 ## Setup Frontend
+```bash
 cd ../frontend
 npm install
 npx expo start
